@@ -46,15 +46,3 @@ def all_combinations(palavra='exemplo'):
 
 	lista = sorted(unicos)
 	return lista
-
-#print(all_combinations('password'))
-#print(len(all_combinations('master')))
-#print(new_word('final'))
-
-arq = open('string.txt', 'w')
-
-for i in range(100000):
-	texto = string_g(random.randint(8,16))
-	arq.write(texto + '\n')
-
-arq.close()
